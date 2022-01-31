@@ -116,81 +116,90 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <form onSubmit={handleEditFormSubmit}>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Age</th>
-              <th scope="col">City</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Salary</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {contacts.map((contact) => (
-              <Fragment>
-                {editContactId === contact.id ? (
-                  <EditableRow
-                    editFormData={editFormData}
-                    handleEditFormChange={handleEditFormChange}
-                    handleCancelClick={handleCancelClick}
-                  />
-                ) : (
-                  <ReadOnlyRow
-                    contact={contact}
-                    handleEditClick={handleEditClick}
-                    handleDeleteClick={handleDeleteClick}
-                  />
-                )}
-              </Fragment>
-            ))}
-          </tbody>
-        </table>
-      </form>
+    <div className="w-100 bg-warning bg-opacity-50 vh-100">
+      <div className="container">
+        <form onSubmit={handleEditFormSubmit}>
+          <table className="table ">
+            <thead className="bg-dark text-white">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody className="bg-warning fw-bold">
+              {contacts.map((contact) => (
+                <Fragment>
+                  {editContactId === contact.id ? (
+                    <EditableRow
+                      editFormData={editFormData}
+                      handleEditFormChange={handleEditFormChange}
+                      handleCancelClick={handleCancelClick}
+                    />
+                  ) : (
+                    <ReadOnlyRow
+                      contact={contact}
+                      handleEditClick={handleEditClick}
+                      handleDeleteClick={handleDeleteClick}
+                    />
+                  )}
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
+        </form>
 
-      <h2>Add a Contact</h2>
-      <form onSubmit={handleAddFormSubmit}>
-        <input
-          type="text"
-          name="fullName"
-          required="required"
-          placeholder="Enter a name..."
-          onChange={handleAddFormChange}
-        />
-        <input
-          type="number"
-          name="age"
-          required="required"
-          placeholder="Enter an age..."
-          onChange={handleAddFormChange}
-        />
-        <input
-          type="text"
-          name="city"
-          required="required"
-          placeholder="Enter a city..."
-          onChange={handleAddFormChange}
-        />
-        <input
-          type="text"
-          name="gender"
-          required="required"
-          placeholder="Enter a gender..."
-          onChange={handleAddFormChange}
-        />
+        <h2>Add a Contact</h2>
+        <form onSubmit={handleAddFormSubmit} className="input-group">
+          <input
+            type="text"
+            name="fullName"
+            required="required"
+            placeholder="Enter a name..."
+            className="form-control"
+            onChange={handleAddFormChange}
+          />
+          <input
+            type="number"
+            name="age"
+            required="required"
+            placeholder="Enter an age..."
+            className="form-control"
+            onChange={handleAddFormChange}
+          />
+          <input
+            type="text"
+            name="city"
+            required="required"
+            placeholder="Enter a city..."
+            className="form-control"
+            onChange={handleAddFormChange}
+          />
+          <input
+            type="text"
+            name="gender"
+            required="required"
+            placeholder="Enter a gender..."
+            className="form-control"
+            onChange={handleAddFormChange}
+          />
 
-        <input
-          type="number"
-          name="salary"
-          required="required"
-          placeholder="Enter a salary..."
-          onChange={handleAddFormChange}
-        />
-        <button type="submit">Add</button>
-      </form>
+          <input
+            type="number"
+            name="salary"
+            required="required"
+            placeholder="Enter a salary..."
+            className="form-control"
+            onChange={handleAddFormChange}
+          />
+          <button type="submit" className="btn btn-success">
+            Add
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
