@@ -1,44 +1,42 @@
-{
-    "employees": [
+ [
         {
             "id": 1,
-            "employee": "Harry",
+            "fullName": "Harry",
             "age": 29,
             "city": "Noida",
-            "gender": "male",
+            "gender": "Male",
             "salary": 25000
         },
         {
             "id": 2,
-            "employee": "Bond",
+            "fullName": "Bond",
             "age": 25,
             "city": "Agra",
-            "gender": "male",
+            "gender": "Male",
             "salary": 18000
         },
         {
             "id": 3,
-            "employee": "Jon",
+            "fullName": "Jon",
             "age": 23,
             "city": "Ranchi",
-            "gender": "male",
+            "gender": "Male",
             "salary": 24000
         },
         {
             "id": 4,
-            "employee": "Markes",
+            "fullName": "Markes",
             "age": 24,
             "city": "Bhopal",
-            "gender": "male",
+            "gender": "Male",
             "salary": 30000
         },
         {
             "id": 5,
-            "employee": "Doe",
+            "fullName": "Doe",
             "age": 33,
             "city": "Indore",
-            "gender": "male",
+            "gender": "Male",
             "salary": 45000
         }
     ]
-}
