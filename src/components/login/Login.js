@@ -3,7 +3,6 @@ import { useState } from "react";
 import logo from "../products/image/logo.png";
 import { Link } from "react-router-dom";
 import Footer from "../products/Footer";
-import Header from "../products/Header";
 
 const formSignin = {
   width: "100%",
@@ -30,7 +29,6 @@ function Login() {
 
   return (
     <>
-      <Header login=" Log in" />
       <main style={{ backgroundColor: "whitesmoke", height: "603px" }}>
         <form style={formSignin} onSubmit={formSubmit}>
           <img src={logo} alt="logo" style={{ width: "100%" }} />

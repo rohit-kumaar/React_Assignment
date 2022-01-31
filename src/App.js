@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-      
+        <Header login=" Log in" />
 
         <Switch>
           <Route exact path="/home">

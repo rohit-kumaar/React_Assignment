@@ -3,7 +3,6 @@ import { nanoid } from "nanoid";
 import data from "../server/employe.json";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
-import Header from "./Header";
 
 const Main = () => {
   const [contacts, setContacts] = useState(data);
@@ -118,7 +117,6 @@ const Main = () => {
 
   return (
     <>
-      <Header login=" Log in" />
       <div
         className="w-100  vh-100"
         style={{ backgroundColor: "#223", color: "#fff", paddingTop: "30px" }}
