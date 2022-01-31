@@ -1,12 +1,11 @@
 import "./App.css";
-import Header from "./components/products/Header";
 import Login from "./components/login/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./components/products/Footer";
 import Main from "./components/products/Main";
 import Products from "./components/products/Products";
 import Cart from "./components/products/Cart";
 import { CartProvider } from "react-use-cart";
+import Header from "./components/products/Header";
 
 function App() {
   return (
@@ -31,8 +30,6 @@ function App() {
             </Route>
           </CartProvider>
         </Switch>
-
-       
       </Router>
     </>
   );

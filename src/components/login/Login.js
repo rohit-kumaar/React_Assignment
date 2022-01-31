@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../products/image/logo.png";
 import { Link } from "react-router-dom";
 import Footer from "../products/Footer";
+import Header from "../products/Header";
 
 const formSignin = {
   width: "100%",
@@ -71,7 +72,7 @@ function Login() {
           <p className="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
         </form>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
