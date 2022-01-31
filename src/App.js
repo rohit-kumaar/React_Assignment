@@ -32,7 +32,7 @@ function App() {
           </CartProvider>
         </Switch>
 
-        <Footer />
+       
       </Router>
     </>
   );

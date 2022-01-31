@@ -1,5 +1,6 @@
 import React from "react";
 import ItemCard from "./CartItem";
+import Footer from "./Footer";
 import data from "./ProductsData";
 
 function Products() {
@@ -7,7 +8,7 @@ function Products() {
     <>
       <div
         className="card album  bg-light  py-3"
-        style={{ width: "100%", height: "603px" }}
+        style={{ width: "100%",  }}
       >
         <h1 className="text-center mt-3">All Items</h1>
         <section className="py-4 container">
@@ -27,6 +28,7 @@ function Products() {
           </div>
         </section>
       </div>
+      <Footer/>
     </>
   );
 }

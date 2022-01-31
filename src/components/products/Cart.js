@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "react-use-cart";
+import Footer from "./Footer";
 
 function Cart() {
   const {
@@ -15,16 +16,19 @@ function Cart() {
 
   if (isEmpty)
     return (
-      <h1 className="text-center " style={{ width: "100%", height: "595px" }}>
-        Your Cart is Empty
-      </h1>
+      <>
+        <h1 className="text-center " style={{ width: "100%", height: "595px" }}>
+          Your Cart is Empty
+        </h1>
+        <Footer />
+      </>
     );
 
   return (
     <>
       <div
         className="card album  bg-light  py-3 container"
-        style={{ width: "100%", height: "603px" }}
+        style={{ width: "100%", minHeight: "603px", maxHeight: "100%" }}
       >
         <div className="row justify-content-center">
           <div className="col-12">
@@ -82,6 +86,7 @@ function Cart() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
