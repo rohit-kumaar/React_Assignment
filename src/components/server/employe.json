@@ -1,7 +1,7 @@
  [
         {
             "id": 1,
-            "fullName": "Harry",
+            "fullName": "Harry Potter",
             "age": 29,
             "city": "Noida",
             "gender": "Male",
@@ -9,7 +9,7 @@
         },
         {
             "id": 2,
-            "fullName": "Bond",
+            "fullName": "James Bond",
             "age": 25,
             "city": "Agra",
             "gender": "Male",
@@ -17,7 +17,7 @@
         },
         {
             "id": 3,
-            "fullName": "Jon",
+            "fullName": "Jone Doe",
             "age": 23,
             "city": "Ranchi",
             "gender": "Male",
@@ -25,7 +25,7 @@
         },
         {
             "id": 4,
-            "fullName": "Markes",
+            "fullName": "Tony Stark",
             "age": 24,
             "city": "Bhopal",
             "gender": "Male",
@@ -33,7 +33,7 @@
         },
         {
             "id": 5,
-            "fullName": "Doe",
+            "fullName": "Rohit kumar",
             "age": 33,
             "city": "Indore",
             "gender": "Male",

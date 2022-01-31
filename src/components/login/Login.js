@@ -20,7 +20,6 @@ function Login() {
 
   const handler = (event) => {
     const { name, value } = event.target;
-    // console.log(name + "--" + value);
     setGetDataFromLogin({ ...getDataFromLogin, [name]: value });
   };
 
@@ -31,6 +30,7 @@ function Login() {
 
   return (
     <>
+      <Header login=" Log in" />
       <main style={{ backgroundColor: "whitesmoke", height: "603px" }}>
         <form style={formSignin} onSubmit={formSubmit}>
           <img src={logo} alt="logo" style={{ width: "100%" }} />

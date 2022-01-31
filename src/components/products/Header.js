@@ -13,7 +13,7 @@ const logoStyle = {
   borderRadius: "5px",
 };
 
-function Header() {
+function Header(props) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-auto">
@@ -35,7 +35,11 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  mb-2 mb-lg-0 ml-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/home"
+                >
                   Home
                 </Link>
               </li>
@@ -82,7 +86,7 @@ function Header() {
                     type="text"
                     className="form-control "
                     aria-label="Text input with segmented dropdown button"
-                    style={{ width: " 890px" }}
+                    style={{ width: " 880px" }}
                   />
                   <button type="button" className="btn  btn-warning bg-warning">
                     <FontAwesomeIcon icon={faSearch} />
@@ -101,7 +105,6 @@ function Header() {
                       width: "24px",
                       height: "18px",
                       objectFit: "cover",
-
                     }}
                     alt="logo"
                   />
@@ -152,7 +155,7 @@ function Header() {
             </ul>
             <form className="d-flex text-white " style={{ cursor: "pointer" }}>
               <Link className="text-decoration-none text-light" to="/login">
-                Log in
+                {props.login}
               </Link>
             </form>
             <Link to="/cart" className="btn btn-dark text-white p-0 mx-2 ">
