@@ -1,14 +1,15 @@
 import React from "react";
 import logo from "../products/image/logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
-      <div className=" bg-dark position-absolute w-100 bottom-0">
+      <div className=" bg-dark position-relative w-100 bottom-0 ">
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top container-fluid">
           <div className="col-md-4 d-flex align-items-center">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
             >
               <img
@@ -16,35 +17,35 @@ function Footer() {
                 alt="logo"
                 style={{ borderRadius: "50%", width: "50px", height: "50px" }}
               />
-            </a>
+            </Link>
             <span className="text-muted">&copy; 2021 Company, Inc</span>
           </div>
 
           <ul className="nav col-md-4 justify-content-end">
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
+              <Link to="#" className="nav-link px-2 text-muted">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
+              <Link to="#" className="nav-link px-2 text-muted">
                 Features
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
+              <Link to="#" className="nav-link px-2 text-muted">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
+              <Link to="#" className="nav-link px-2 text-muted">
                 FAQs
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-muted">
+              <Link to="#" className="nav-link px-2 text-muted">
                 About
-              </a>
+              </Link>
             </li>
           </ul>
         </footer>

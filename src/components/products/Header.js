@@ -5,6 +5,8 @@ import flag from "../products/image/india-flag.png";
 import { faCartArrowDown, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { Link } from "react-router-dom";
+
 const logoStyle = {
   width: "129px",
   hight: "50px",
@@ -14,11 +16,11 @@ const logoStyle = {
 function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-auto">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="#">
             <img src={logo} alt="logo" style={logoStyle} />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,9 +35,9 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  mb-2 mb-lg-0 ml-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/home">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <div className="input-group mx-3 ">
@@ -53,34 +55,34 @@ function Header() {
                   </button>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="#">
                         All Catogories
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="#">
                         Beauty
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="#">
                         Books
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="#">
                         Deals
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <input
                     type="text"
                     className="form-control "
                     aria-label="Text input with segmented dropdown button"
-                    style={{ width: " 910px" }}
+                    style={{ width: " 890px" }}
                   />
                   <button type="button" className="btn  btn-warning bg-warning">
                     <FontAwesomeIcon icon={faSearch} />
@@ -99,7 +101,9 @@ function Header() {
                       width: "24px",
                       height: "18px",
                       objectFit: "cover",
+
                     }}
+                    alt="logo"
                   />
                 </button>
                 <button
@@ -147,17 +151,17 @@ function Header() {
               </div>
             </ul>
             <form className="d-flex text-white " style={{ cursor: "pointer" }}>
-              <a className="text-decoration-none text-light" href="/login">
+              <Link className="text-decoration-none text-light" to="/login">
                 Log in
-              </a>
+              </Link>
             </form>
-            <div className="btn btn-dark text-white p-0 mx-2 ">
+            <Link to="/cart" className="btn btn-dark text-white p-0 mx-2 ">
               <FontAwesomeIcon
                 className="text-white h3 my-0"
                 icon={faCartArrowDown}
               />
               Cart
-            </div>
+            </Link>
           </div>
         </div>
       </nav>
