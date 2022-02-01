@@ -126,6 +126,7 @@ const Main = () => {
             <table className="table ">
               <thead className=" text-white" style={{ backgroundColor: "red" }}>
                 <tr>
+                  
                   <th scope="col">Name</th>
                   <th scope="col">Age</th>
                   <th scope="col">City</th>
